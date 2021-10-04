@@ -42,6 +42,17 @@ class ChatApplication:
 		scrollbar.place(relheight=1, relx=0.974)
 		scrollbar.configure(command=self.text_widget.yview)
 
+		# bottom label
+		bottom_label = Label(self.window, bg=BG_GRAY, height=80)
+		bottom_label.place(relwidth=1, rely=0.825)
+		bottom_label.configure(cursor="arrow", state=DISABLED)
+
+		# message entry box
+		self.msg_entry = Entry(bottom_label, bg="#2C3E50", fg=TEXT_COLOR, font=FONT)
+		self.msg_entry.place(relwidth=0.74, relheight=0.06, rely=0.008, relx=0.011)
+		self.msg_entry.focus()
+		self.msg_entry.bind("<Return>", self._on_enter_pressed)
+
 if __name__ == "__main__":
 	app = ChatApplication()
 	app.run()
