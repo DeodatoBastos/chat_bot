@@ -1,0 +1,96 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": [
+				"hi",
+				"hey",
+				"hello",
+				"good day"
+			],
+			"response": "Hello! How can I help you?"
+		},
+		{
+			"tag": "goodbye",
+			"patterns": [
+				"bye",
+				"goodbye",
+				"later"
+			],
+			"response": "Bye! Come back again sonn!"
+		},
+		{
+			"tag": "thanks",
+			"patterns": [
+				"thanks",
+				"thank",
+				"helpful",
+				"thank's!"
+			],
+			"response": "Happy to help!"
+		},
+		{
+			"tag": "services",
+			"patterns": [
+				"medical check up",
+				"kind of doctors"
+			],
+			"response": "We have general practitioners, ophthalmologists and otolaryngology"
+		},
+		{
+			"tag": "payments",
+			"patterns": [
+				"credit cards",
+				"accept",
+				"mastercard",
+				"paypal",
+				"pix",
+				"cash"
+			],
+			"response": "We accept VISA, Mastercard, PIX, cash and Paypal!"
+		},
+		{
+			"tag": "openinng",
+			"patterns": [
+				"operate",
+				"opening hours",
+				"opening"
+			],
+			"response": "We opening at 7 am and close at 5 pm, Monday through Frinday. On Sartudays we are open from 8am to 1pm."
+		},
+		{
+			"tag": "register",
+			"patterns": [
+				"kind of document",
+				"register me",
+				"documents",
+				"registration"
+			],
+			"response": "We need your full name, zip code, health insurance plan and medical record to make our register."
+		},
+		{
+			"tag": "schedul_initial",
+			"patterns": [
+				"When can I make an appointment",
+				"I would like to make an appointment"
+			],
+			"response": "We will need some days to finish your resgister, sorry about that!"
+		},
+		{
+			"tag": "schedul_middle",
+			"patterns": [
+				"When can I make an appointment",
+				"I would like to make an appointment"
+			],
+			"response": "Do you already have an register?"
+		},
+		{
+			"tag": "schedul",
+			"patterns": [
+				"When can I make an appointment",
+				"I would like to make an appointment"
+			],
+			"response": "Please, just a moment we'll check this"
+		}
+	]
+}
